@@ -1,0 +1,8 @@
+# Write your MySQL query statement below
+UPDATE Salary
+SET sex = 
+CASE 
+WHEN sex = 'm' THEN 'f' else 'm'
+END;
+# set sex = CASE when sex ='m' then 'f' else 'm' end;
+
