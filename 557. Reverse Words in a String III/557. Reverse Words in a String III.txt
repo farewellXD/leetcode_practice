@@ -1,0 +1,13 @@
+class Solution:
+    def reverseWords(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        w = str.split(s)
+        L = []
+        for i in range(len(w)):
+            L.append(w[i][::-1])
+        
+        L = " ".join(L)
+        return L
