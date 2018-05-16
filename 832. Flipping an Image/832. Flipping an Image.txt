@@ -1,0 +1,20 @@
+class Solution:
+    def flipAndInvertImage(self, A):
+        """
+        :type A: List[List[int]]
+        :rtype: List[List[int]]
+        """
+        list_ = []
+        new_list = []
+        for i in range(len(A)):
+            list_.append(A[i][::-1])
+    
+        
+        for i, unit in enumerate(list_):
+            for j, value in enumerate(unit):
+                if  value == 0:
+                    unit[j] = 1 
+                else:
+                    unit[j] = 0
+            new_list.append(unit)
+        return new_list
