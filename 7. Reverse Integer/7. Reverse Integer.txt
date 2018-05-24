@@ -1,0 +1,12 @@
+class Solution:
+    def reverse(self, x):
+        t = str(abs(x))
+        if x >= 0:
+            t = int(t[::-1])
+        else:
+            t = -int(t[::-1])
+            
+        return t if -(2**31)-1 < t < 2**31 else 0
+        
+            
+        
